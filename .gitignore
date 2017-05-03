@@ -1,0 +1,9 @@
+glTFLoader/.vs/
+glTFLoader/packages/
+
+glTFLoader/glTFCodeGenerator/bin
+glTFLoader/glTFCodeGenerator/obj
+
+glTFLoader/SampleLoader/bin
+glTFLoader/SampleLoader/obj
+
