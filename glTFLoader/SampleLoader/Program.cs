@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using glTFGeneratedLoader;
+using System;
+using System.IO;
 
 namespace SampleLoader
 {
@@ -10,6 +8,12 @@ namespace SampleLoader
     {
         static void Main(string[] args)
         {
+            string filePath = @"..\..\Triangle.gltf";
+            string text = File.ReadAllText(filePath);
+            GlTF gltf_data = GlTF.FromJson(text);
+
+            Console.Write(gltf_data.ToString());
+            Console.ReadLine();
         }
     }
 }
